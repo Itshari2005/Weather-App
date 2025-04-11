@@ -1,0 +1,138 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Animated gradient background */
+  body {
+    height: 100vh;
+    background: linear-gradient(-45deg, #8e44ad, #3498db, #1abc9c, #f39c12);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  @keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+  
+  /* Glassmorphism card */
+  .AppCard {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px 25px;
+    text-align: center;
+    color: #ffffff;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Title */
+  .title h1 {
+    font-size: 2.2rem;
+    margin-bottom: 5px;
+  }
+  
+  .title p {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  .title p span {
+    font-weight: bold;
+    color: #00e6e6;
+  }
+  
+  /* Search input/button */
+  .searchArea {
+    display: flex;
+    margin: 20px 0;
+    gap: 12px;
+  }
+  
+  .searchArea input {
+    flex: 1;
+    padding: 14px 18px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    outline: none;
+  }
+  
+  .searchArea input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .searchArea button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .searchArea button img {
+    width: 20px;
+  }
+  
+  /* Weather Info Display */
+  .WeatherDisplay {
+    display: none;
+  }
+  
+  .Weather-Icon {
+    width: 120px;
+    margin: 20px auto;
+  }
+  
+  .WeatherDisplay h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+  }
+  
+  .WeatherDisplay h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    opacity: 0.8;
+  }
+  
+  /* Details like wind/humidity */
+  .detailsInfo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .column {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+  
+  .column img {
+    width: 40px;
+  }
+  
+  .column p {
+    margin: 2px 0;
+    font-size: 0.95rem;
+  }
+  
