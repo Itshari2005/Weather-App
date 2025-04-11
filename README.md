@@ -25,8 +25,7 @@ It fetches real-time weather data using the OpenWeatherMap API.
 ---
 
 ## 📸 Preview
-
-*(Add a screenshot here if you want. For example:)*  
+ 
 ![App Screenshot](img/image1.png)
 ![App Screenshot](img/image2.png)
 
